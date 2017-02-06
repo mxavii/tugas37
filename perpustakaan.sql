@@ -77,7 +77,7 @@ INSERT INTO pelanggaran VALUES ('3', 'hilang', '100000');
 INSERT INTO pelanggaran VALUES ('4', 'dicorat-coret', '10000');
 INSERT INTO pelanggaran VALUES ('5', 'basah', '29000');
 INSERT INTO pelanggaran VALUES ('6', 'terlambat 1-7 hari', '7000');
-INSERT INTO pelanggaran VALUES ('7', 'terlambat 7-30 hari', '25000');
+INSERT INTO pelanggaran VALUES ('7', 'terlambat 7-30 hari', '10000');
 INSERT INTO pelanggaran VALUES ('8', 'terlambat di atas 30 hari', '100000');
 UPDATE pelanggaran SET nominal=25000 WHERE id=7;
 INSERT INTO kembali VALUES ('1', '1', NOW(), '3');
