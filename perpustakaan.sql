@@ -1,3 +1,6 @@
+CREATE DATABASE perpustakaan;
+use perpustakaan;
+
 CREATE TABLE buku (id INT(11) PRIMARY KEY, judul VARCHAR(255), id_pengarang INT(11), id_penerbit INT(11), tahun_terbit INT(11), jumlah_stok INT(11), kode_rak VARCHAR(255));
 CREATE TABLE pengarang (id INT(11) PRIMARY KEY, nama VARCHAR(255), alamat TEXT, telepon VARCHAR(255));
 CREATE TABLE penerbit (id INT(11) PRIMARY KEY, nama VARCHAR(255), alamat TEXT, telepon VARCHAR(255));
@@ -18,7 +21,6 @@ ALTER TABLE denda_item CHANGE id_denda id_pelanggaran INT(11);
 ALTER TABLE denda_item MODIFY COLUMN id_buku INT(11) AFTER id;
 ALTER TABLE denda DROP COLUMN nominal;
 ALTER TABLE denda_item DROP COLUMN nominal;
-
 
 INSERT INTO buku VALUES ('1','(Muhammad: His Life Based On The Earliest Sources','1','1','1983', '17', 'B99');
 INSERT INTO buku VALUES ('2','Muhammad Al-Fatih : Penakluk Konstantinopel', '2', '2', '2012', '33', 'B102');
