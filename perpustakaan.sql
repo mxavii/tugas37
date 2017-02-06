@@ -1,5 +1,5 @@
-CREATE DATABASE perpustakaan;
-use perpustakaan;
+CREATE DATABASE perpustakaan_syafii;
+use perpustakaan_syafii;
 
 CREATE TABLE buku (id INT(11) PRIMARY KEY, judul VARCHAR(255), id_pengarang INT(11), id_penerbit INT(11), tahun_terbit INT(11), jumlah_stok INT(11), kode_rak VARCHAR(255));
 CREATE TABLE pengarang (id INT(11) PRIMARY KEY, nama VARCHAR(255), alamat TEXT, telepon VARCHAR(255));
